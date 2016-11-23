@@ -3,26 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.yousee.test.YouseeBornTest">
-        <methods>
-          <include name="testBorn"/>
-        </methods>
-      </class> <!-- com.yousee.test.YouseeBornTest -->
-      <class name="com.yousee.driver.Driver">
-        <methods>
-          <include name="testMovie"/>
-        </methods>
-      </class> <!-- com.yousee.driver.Driver -->
       <class name="com.yousee.test.YoseeFilm">
         <methods>
           <include name="testMovie"/>
         </methods>
       </class> <!-- com.yousee.test.YoseeFilm -->
-      <class name="com.yousee.driver.Driver_Firefox">
-        <methods>
-          <include name="testFirefox"/>
-        </methods>
-      </class> <!-- com.yousee.driver.Driver_Firefox -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

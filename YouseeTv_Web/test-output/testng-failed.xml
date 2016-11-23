@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Test1(failed)" parallel="tests">
     <classes>
-      <class name="com.yousee.test.YouseeBornTest">
-        <methods>
-          <include name="testBorn"/>
-        </methods>
-      </class> <!-- com.yousee.test.YouseeBornTest -->
-      <class name="com.yousee.driver.Driver">
-        <methods>
-          <include name="testMovie"/>
-        </methods>
-      </class> <!-- com.yousee.driver.Driver -->
       <class name="com.yousee.test.YoseeFilm">
         <methods>
           <include name="testMovie"/>
         </methods>
       </class> <!-- com.yousee.test.YoseeFilm -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test name="Test2(failed)" parallel="tests">
+    <classes>
       <class name="com.yousee.driver.Driver_Firefox">
         <methods>
           <include name="testFirefox"/>
         </methods>
       </class> <!-- com.yousee.driver.Driver_Firefox -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

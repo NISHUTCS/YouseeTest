@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="tests" thread-count="2">
   <test name="Test1">
   <classes>
-      <class name="com.yousee.driver.Driver"/>
+      <class name="com.yousee.test.YoseeFilm"/>
     </classes>
   </test> 
   
@@ -12,5 +12,5 @@
       <class name="com.yousee.driver.Driver_Firefox"/>
     </classes>
   </test> 
-  
+   
 </suite> 

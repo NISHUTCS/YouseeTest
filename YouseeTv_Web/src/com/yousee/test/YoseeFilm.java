@@ -72,7 +72,7 @@ public class YoseeFilm {
 		logger.log(LogStatus.PASS, "Login SuccessFul");
 		Common.takeScreenshot(driver, 4);
 		String image1=logger.addScreenCapture("F:\\Automation\\Nishant\\YouseeReport\\Screenshot4.png");
-		logger.log(LogStatus.FAIL, "Video Played",image1);
+		logger.log(LogStatus.PASS, "Video Played",image1);
 		//Common.takeScreenshot(driver, 4);
 		
 		report.endTest(logger);
@@ -105,10 +105,14 @@ public class YoseeFilm {
 			driver.findElement(By.xpath("//*[@id='synopsis__status__center']")).click();
 			
 		} catch (Exception e) {
-			logger.log(LogStatus.FAIL, "Video could not be played");
+			
 			Common.takeScreenshot(driver, 1);
 			Common.takeScreenshot(driver,2);
 			Common.takeScreenshot(driver,3);
+			String image=logger.addScreenCapture("F:\\Automation\\Nishant\\YouseeReport\\Screenshot1.png");
+			//logger.log(LogStatus.FAIL, "Video could not be played");
+			//logger.log(LogStatus.FAIL, "Video Played",image);
+			logger.log(LogStatus.FAIL, "Video Played",image);
 			report.endTest(logger);
 			report.flush();
 			System.exit(0);
