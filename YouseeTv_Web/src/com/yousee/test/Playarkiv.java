@@ -74,6 +74,7 @@ public class Playarkiv {
 			report.endTest(logger);
 			report.flush();
 			System.exit(0);
+			//Test
 		}
 		
 		try {
